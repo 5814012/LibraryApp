@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         }
 
         buscador=findViewById(R.id.svAutores)
+        buscador.setOnQueryTextListener(this)
         recy = findViewById(R.id.rvAutores)
         recy.layoutManager = LinearLayoutManager(
             applicationContext,
@@ -69,7 +70,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     }
 
     override fun onQueryTextChange(newText: String?): Boolean {
-//        buscador.setOnQueryTextListener(this)
+        buscador.setOnQueryTextListener(this)
         return true
     }
 }
