@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LibraryApp</string>
+    <string name="search_hint">Alberto Chipotle</string>
+</resources>
